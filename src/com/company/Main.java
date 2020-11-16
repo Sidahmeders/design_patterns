@@ -8,7 +8,9 @@ public class Main {
 //        TaxCalculator calculator = getTaxCalculator();
 //        calculator.calculateTax();
         var account = new Account();
-
+        account.deposit(22);
+        account.withdraw(13);
+        System.out.println(account.getBalance());
     }
 //    public static TaxCalculator getTaxCalculator() {
 //        return new TaxCalculator2020();
