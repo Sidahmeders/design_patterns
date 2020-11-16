@@ -15,9 +15,14 @@ public class Main {
 //        mailService.sendEmail();
 //        var textBox = new TextBox();
 //        textBox.enable();
+        drawUIControl(new TextBox());
     }
 //    public static TaxCalculator getTaxCalculator() {
 //        return new TaxCalculator2020();
 //    }
+
+    public static void drawUIControl(UIControl control) {
+        control.draw();
+    }
 
 }
