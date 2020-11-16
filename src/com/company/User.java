@@ -3,7 +3,8 @@ package com.company;
 public class User {
     // fields (attributes)
     public String name;
-    public User(String name) {
+//    public int
+    public User(String name, int age) {
         this.name = name;
     }
     // methods
