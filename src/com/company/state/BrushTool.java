@@ -1,6 +1,6 @@
 package com.company.state;
 
-public class Brush  implements Tool {
+public class BrushTool implements Tool {
     @Override
     public void mouseDown() {
         System.out.println("Brush Icon");
