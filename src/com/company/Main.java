@@ -5,6 +5,7 @@ import com.company.memento.History;
 import com.company.state.BrushTool;
 import com.company.state.Canvas;
 import com.company.state.SelectionTool;
+import com.company.state.abuseState.StopWatch;
 
 public class Main {
 
@@ -31,10 +32,14 @@ public class Main {
 //        editor.setContent("c");
 //        editor.restore(history.pop());
 //        System.out.println(editor.getContent());
-        var canvas = new Canvas();
-        canvas.setCurrentTool(new BrushTool());
-        canvas.mouseDown();
-        canvas.mouseUp();
+//        var canvas = new Canvas();
+//        canvas.setCurrentTool(new BrushTool());
+//        canvas.mouseDown();
+//        canvas.mouseUp();
+        var stopWatch = new StopWatch();
+        stopWatch.click();
+        stopWatch.click();
+        stopWatch.click();
     }
 //    public static TaxCalculator getTaxCalculator() {
 //        return new TaxCalculator2020();
