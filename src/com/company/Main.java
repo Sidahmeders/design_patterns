@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.memento.Editor;
+import com.company.memento.History;
 
 public class Main {
 
@@ -19,10 +20,16 @@ public class Main {
 //        textBox.enable();
 //        drawUIControl(new TextBox());
         var editor = new Editor();
+        var history = new History();
+
         editor.setContent("a");
+        history.push(editor.createState());
         editor.setContent("b");
+        history.push(editor.createState());
         editor.setContent("c");
-        editor.undo();
+        editor.restore(history.pop());
+
+        System.out.println(editor.getContent());
     }
 //    public static TaxCalculator getTaxCalculator() {
 //        return new TaxCalculator2020();
