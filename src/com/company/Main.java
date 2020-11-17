@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.memento.Editor;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,14 +17,19 @@ public class Main {
 //        mailService.sendEmail();
 //        var textBox = new TextBox();
 //        textBox.enable();
-        drawUIControl(new TextBox());
+//        drawUIControl(new TextBox());
+        var editor = new Editor();
+        editor.setContent("a");
+        editor.setContent("b");
+        editor.setContent("c");
+        editor.undo();
     }
 //    public static TaxCalculator getTaxCalculator() {
 //        return new TaxCalculator2020();
 //    }
 
-    public static void drawUIControl(UIControl control) {
-        control.draw();
-    }
+//    public static void drawUIControl(UIControl control) {
+//        control.draw();
+//    }
 
 }
